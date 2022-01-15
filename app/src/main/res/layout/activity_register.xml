@@ -1,16 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable
             name="Activity"
             type="com.example.sdk_project.ui.auth.activity.RegisterActivity" />
     </data>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.auth.activity.RegisterActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.auth.activity.RegisterActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_line2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.235"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_line3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.465"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_line4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.61"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_line5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/left_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.12"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/right_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.88"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textSize="82px"
+            android:layout_marginTop="6dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="아이디"
+            android:textColor="#707070"
+            android:textSize="57px"
+            app:layout_constraintStart_toStartOf="@+id/left_line"
+            app:layout_constraintTop_toTopOf="@+id/top_line" />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:background="@drawable/et_iogin"
+            android:hint="아이디"
+            android:textColorHint="#707070"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/id"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="비밀번호"
+            android:textColor="#707070"
+            android:textSize="57px"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintTop_toTopOf="@id/top_line2"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:background="@drawable/et_iogin"
+            android:hint="비밀번호"
+            android:textColorHint="#707070"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line"/>
+
+        <EditText
+            android:id="@+id/et_password2"
+            android:layout_width="0dp"
+            android:layout_height="130px"
+            android:background="@drawable/et_iogin"
+            android:hint="비밀번호 확인"
+            android:textColorHint="#707070"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@id/et_password"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="이름"
+            android:textColor="#707070"
+            android:textSize="57px"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintTop_toTopOf="@id/top_line3"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:background="@drawable/et_iogin"
+            android:hint="이름을 입력하세요"
+            android:textColorHint="#707070"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line"/>
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="학교 선택"
+            android:textColor="#707070"
+            android:textSize="57px"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintTop_toTopOf="@id/top_line4"/>
+
+        <EditText
+            android:id="@+id/et_school"
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:background="@drawable/et_iogin"
+            android:hint="학교 이름을 입력하세요"
+            android:textColorHint="#707070"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/school"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line"/>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="0dp"
+            android:layout_height="135px"
+            android:text="가입하기"
+            android:textSize="60px"
+            app:layout_constraintLeft_toLeftOf="@id/left_line"
+            app:layout_constraintRight_toRightOf="@id/right_line"
+            app:layout_constraintTop_toTopOf="@id/top_line5"
+            android:background="@drawable/bt_register"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
