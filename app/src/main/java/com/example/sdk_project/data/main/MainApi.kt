@@ -1,17 +1,14 @@
 package com.example.sdk_project.data.main
 
-import com.example.sdk_project.ui.main.dto.MainRequestDTO
 import com.example.sdk_project.ui.main.dto.MainResponseDTO
 import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
-import retrofit2.http.Body
 import retrofit2.http.GET
-import retrofit2.http.Query
+import retrofit2.http.Header
 
 interface MainApi {
     @GET("post")
     fun readPostList(
-        @Query("id") id: Int,
-        @Body mainRequestDTO: MainRequestDTO
+        @Header("Authorization") accessToken: String
     ) : Single<Response<MainResponseDTO>>
 }
