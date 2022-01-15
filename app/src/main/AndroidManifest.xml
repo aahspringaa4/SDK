@@ -5,13 +5,16 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
         android:name=".di.SdkApplication"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SDK_Project">
+        <activity
+            android:name=".ui.createpost.activity.CreatePostActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.profile.activity.ProfileActivity"
             android:exported="false" />
