@@ -1,6 +1,7 @@
 package com.example.sdk_project.data
 
 import com.example.sdk_project.data.auth.AuthApi
+import com.example.sdk_project.data.createpost.CreatePostApi
 import com.example.sdk_project.data.main.MainApi
 import com.example.sdk_project.data.mypage.MyPageApi
 import com.example.sdk_project.data.postdetail.PostApi
@@ -17,6 +18,10 @@ private val retrofit: Retrofit = Retrofit.Builder().apply {
 
 val authApi : AuthApi by lazy {
     retrofit.create(AuthApi::class.java)
+}
+
+val createPostApi : CreatePostApi by lazy {
+    retrofit.create(CreatePostApi::class.java)
 }
 
 val mainApi : MainApi by lazy {
