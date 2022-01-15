@@ -13,6 +13,5 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(
     }
 
     override fun observeEvent() {
-        TODO("Not yet implemented")
     }
 }
