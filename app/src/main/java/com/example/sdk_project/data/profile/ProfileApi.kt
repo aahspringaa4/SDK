@@ -1,4 +1,16 @@
 package com.example.sdk_project.data.profile
 
+import com.example.sdk_project.ui.profile.dto.ProfileResponseDTO
+import io.reactivex.rxjava3.core.Single
+import retrofit2.Response
+import retrofit2.http.GET
+import retrofit2.http.Header
+import retrofit2.http.Path
+
 interface ProfileApi {
+    @GET("user/profile/{user-id}")
+    fun readProfile(
+        @Header("Authorization") accessToken: String,
+        @Path("user-id") userId: String
+    ): Single<Response<ProfileResponseDTO>>
 }
