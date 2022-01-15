@@ -1,4 +1,4 @@
-package com.example.sdk_project.ui.profile
+package com.example.sdk_project.ui.profile.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

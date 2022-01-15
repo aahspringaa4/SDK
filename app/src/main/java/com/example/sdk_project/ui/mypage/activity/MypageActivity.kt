@@ -1,14 +1,14 @@
-package com.example.sdk_project.ui.main
+package com.example.sdk_project.ui.mypage.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.sdk_project.R
 import com.example.sdk_project.base.BaseActivity
 import com.example.sdk_project.databinding.ActivityLoginBinding
-import com.example.sdk_project.databinding.ActivityMainBinding
+import com.example.sdk_project.databinding.ActivityMypageBinding
 
-class MainActivity : BaseActivity<ActivityMainBinding>(
-    R.layout.activity_main
+class MypageActivity : BaseActivity<ActivityMypageBinding>(
+    R.layout.activity_mypage
 ) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

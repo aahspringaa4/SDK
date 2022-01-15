@@ -1,4 +1,4 @@
-package com.example.sdk_project.ui.postdetail
+package com.example.sdk_project.ui.postdetail.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
