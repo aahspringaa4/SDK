@@ -15,7 +15,7 @@ private val retrofit: Retrofit = Retrofit.Builder().apply {
     addConverterFactory(GsonConverterFactory.create())
 }.build()
 
-val loginApi : AuthApi by lazy {
+val authApi : AuthApi by lazy {
     retrofit.create(AuthApi::class.java)
 }
 
