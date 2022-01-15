@@ -5,11 +5,13 @@ import com.example.sdk_project.ui.createpost.dto.CreatePostResponseDTO
 import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
 import retrofit2.http.Body
+import retrofit2.http.Header
 import retrofit2.http.POST
 
 interface CreatePostApi {
     @POST("post")
     fun createPost(
+        @Header ("Authorization") accessToken: String,
         @Body createPostRequestDTO: CreatePostRequestDTO
     ) : Single<Response<CreatePostResponseDTO>>
 }
