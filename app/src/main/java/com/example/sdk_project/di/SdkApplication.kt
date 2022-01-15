@@ -18,7 +18,8 @@ class SdkApplication: Application() {
                     MainModule,
                     MypageModule,
                     PostDetailModule,
-                    ProfileModule
+                    ProfileModule,
+                    CreatePostModule
                 )
             )
         }
