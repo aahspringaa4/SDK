@@ -10,7 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SDK_Project">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.mypage.MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.postdetail.PostDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
