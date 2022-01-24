@@ -4,7 +4,7 @@
 
 ### Skills
 ---
-RxJava, Koin, Retrofit2, OkHttp, MVVM, AAC, Glide
+RxJava, Koin, Retrofit2, MVVM, AAC, Glide
 
 ### Language
 ---
